@@ -1,5 +1,3 @@
-package Santander_ADA.Aula01;
-
 import java.util.Scanner;
 
 public class Ex01 {
