@@ -21,10 +21,10 @@ public class Ex06 {
             return Math.sqrt(p * (p - a)*(p - b)* (p - c));
         }
         public static String trianguloValido(int a, int b, int c){
-
-            String triangulo = String.valueOf(calculoTriangulo(a, b, c));
+            double arredondar = Math.round(calculoTriangulo(a, b, c)*100.0)/100.0;
+            String triangulo = String.valueOf(arredondar);
             if(triangulo(a, b, c)){
-                return triangulo;
+                return triangulo + "Cm²";
             }
             return "Não é tringulo";
         }
